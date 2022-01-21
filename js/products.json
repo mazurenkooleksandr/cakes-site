@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Ананас-Імбир",
+    "weight": 980,
+    "price": 420,
+    "imgSrc": "ananas-imbyr.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Малиновий чай",
+    "weight": 855,
+    "price": 450,
+    "imgSrc": "malynovyj-chaj.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Шоколадний пломбір",
+    "weight": 1020,
+    "price": 630,
+    "imgSrc": "shokoladnyy plombir.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Груша",
+    "weight": 730,
+    "price": 370,
+    "imgSrc": "grusha.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Персик-Маракуя",
+    "weight": 950,
+    "price": 490,
+    "imgSrc": "persyc-maracuya.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Шоколадне праліне",
+    "weight": 970,
+    "price": 520,
+    "imgSrc": "shokolad-praline.jpeg"
+  }
+]
