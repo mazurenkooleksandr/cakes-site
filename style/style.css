@@ -126,13 +126,14 @@ header h1 {
 }
 
 .cart-item__img img {
-  max-width: 100px;
-  height: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
 }
 
 .cart-item__desc {
   padding-top: 15px;
-  padding-left: 15px;
+  padding-left: 45px;
   max-width: 208px;
 }
 
