@@ -53,9 +53,9 @@ window.addEventListener("click", function (event) {
 
 
 									</div>
-                                    <div>
-                                                 <p class="delete__item">✘</p>
-                                             </div>
+                      <div>
+                        <p class="delete__item">✘</p>
+                      </div>
 								</div>
 							</div>`;
 
@@ -78,4 +78,6 @@ window.addEventListener("click", function (event) {
       cartEmptyBanner.classList.add("none");
     }
   }
+
+  calcPrice();
 });
