@@ -163,6 +163,13 @@ header h1 {
   margin-left: 15px;
 }
 
+.delete__item {
+  font-size: 24px;
+  color: red;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
 .cart-total {
   font-size: 18px;
   font-weight: 500;
@@ -184,6 +191,6 @@ header h1 {
   color: #eb5a1e;
 }
 
-/* .none {
+.none {
   display: none;
-} */
+}

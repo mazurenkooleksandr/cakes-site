@@ -1,6 +1,8 @@
 const cartWrapper = document.querySelector(".cart-wrapper");
+const cartEmptyBanner = document.querySelector("[data-cart-empty]");
 
 window.addEventListener("click", function (event) {
+  const deleteBtn = event.target.closest(".delete__item");
   if (event.target.hasAttribute("data-cart")) {
     const card = event.target.closest(".card");
 
@@ -44,17 +46,28 @@ window.addEventListener("click", function (event) {
 											<div class="price">
 												<div class="price__currency">${productObj.price}</div>
 											</div>
-
 										</div>
 										<!-- // cart-item__details -->
 
+
 									</div>
+                                    <div>
+                                                 <p class="delete__item">✘</p>
+                                             </div>
 								</div>
 							</div>`;
 
       // Отобразим товар в корзине
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+      cartEmptyBanner.classList.add("none");
     }
     card.querySelector("[data-counter]").innerText = "1";
+  }
+
+  if (deleteBtn) {
+    event.target.closest(".cart-item").remove();
+    cartWrapper.children.length < 1
+      ? cartEmptyBanner.classList.remove("none")
+      : cartEmptyBanner.classList.add("none");
   }
 });
