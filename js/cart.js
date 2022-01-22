@@ -1,5 +1,7 @@
 const cartWrapper = document.querySelector(".cart-wrapper");
 const cartEmptyBanner = document.querySelector("[data-cart-empty]");
+const orderForm = document.querySelector("#order-form");
+const cartTotal = document.querySelector(".cart-total");
 
 window.addEventListener("click", function (event) {
   const deleteBtn = event.target.closest(".delete__item");
@@ -60,14 +62,20 @@ window.addEventListener("click", function (event) {
       // Отобразим товар в корзине
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
       cartEmptyBanner.classList.add("none");
+      orderForm.classList.remove("none");
+      cartTotal.classList.remove("none");
     }
     card.querySelector("[data-counter]").innerText = "1";
   }
 
   if (deleteBtn) {
     event.target.closest(".cart-item").remove();
-    cartWrapper.children.length < 1
-      ? cartEmptyBanner.classList.remove("none")
-      : cartEmptyBanner.classList.add("none");
+    if (cartWrapper.children.length < 1) {
+      cartEmptyBanner.classList.remove("none");
+      orderForm.classList.add("none");
+      cartTotal.classList.add("none");
+    } else {
+      cartEmptyBanner.classList.add("none");
+    }
   }
 });
