@@ -18,13 +18,13 @@ function renderProducts(productsArray) {
 
 								<div class="details-wrapper">
 
-									<!-- Счетчик -->
+									<!-- Counter -->
 									<div class="items counter-wrapper">
 										<div class="items__control" data-action="minus">-</div>
 										<div class="items__current" data-counter>1</div>
 										<div class="items__control" data-action="plus">+</div>
 									</div>
-									<!-- // Счетчик -->
+									<!-- // Counter -->
 
 									<div class="price">
 										<div class="price__weight">${item.weight} г.</div>

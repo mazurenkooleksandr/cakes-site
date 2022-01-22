@@ -21,7 +21,7 @@ window.addEventListener("click", function (event) {
       `[data-id="${productObj.id}"]`
     );
 
-    // Если товар есть в корзине
+    // If the item is in the cart
     if (itemInCart) {
       const counterElement = itemInCart.querySelector("[data-counter]");
       counterElement.innerText =
@@ -59,7 +59,7 @@ window.addEventListener("click", function (event) {
 								</div>
 							</div>`;
 
-      // Отобразим товар в корзине
+      // Item in cart
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
       cartEmptyBanner.classList.add("none");
       orderForm.classList.remove("none");
